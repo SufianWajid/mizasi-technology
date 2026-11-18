@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mizasi: how the technology works</title>
+<meta name="description" content="Mizasi is a multi-agent system for the 11+ where code proves every answer. Follow one question from a topic to a child's phone.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<canvas id="stage" aria-hidden="true"></canvas>
+<header class="hero" data-shape="cube" data-at="hero" data-field="yellow">
+  <div class="bar">
+    <a class="brand" href="https://mizasi.com"><i aria-hidden="true"><b></b><b></b><b></b><b></b></i>Mizasi</a>
+    <nav class="bar__nav small" aria-label="Sections"><a href="#journey">Journey</a><a href="#agents">Agents</a><a href="#try">Try it</a><a href="#inside">Inside</a><a href="#proof">Proof</a><a class="bar__cta" href="#contact">Talk to us</a></nav>
+  </div>
+  <h1 class="display">Code marks every answer.</h1>
+  <div class="hero__foot">
+    <p class="lead">Mizasi is a multi-agent system that writes every 11+ lesson on demand, with a verification layer that proves each answer before a child sees it.</p>
+    <div class="hero__act"><p class="hint">Drag the cube, or scroll.</p><a class="button" href="#journey">Follow one question</a></div>
+  </div>
+</header>
+
+<main>
+<section class="jr seq" id="journey" aria-label="How one question is made">
+  <div class="wrap jr__in">
+    <div class="jr__steps">
+      <div class="step" data-shape="s1" data-field="pink"><h2 class="jh">It starts with one 11+ topic.</h2><div class="step__b"><p class="lead">Four subjects and 1,449 topics. For each one Mizasi makes the parts a teacher would: the idea, the method, the practice and the answers.</p><ul class="facts"><li>4 subjects</li><li>1,449 topics</li><li>Fresh every session</li></ul></div></div>
+      <div class="step" data-shape="s2" data-field="cyan"><h2 class="jh">No clear brief, no lesson.</h2><div class="step__b"><p class="lead">Before a word is written, Mizasi pins down what this topic needs: the skill, the question format and the level. If the brief isn't clear, it stops.</p><ul class="facts"><li>Brief or stop</li><li>Never improvised</li></ul></div></div>
+      <div class="step" data-shape="s3" data-field="yellow"><h2 class="jh">A team of agents writes it.</h2><div class="step__b"><p class="lead">AI agents write the lesson together. Each has one job, and each kind of question has its own specialist.</p><ul class="facts"><li>One job each</li><li>Structured hand-offs</li><li>A specialist per question type</li></ul></div></div>
+      <div class="step" data-shape="s4" data-field="pink"><h2 class="jh">Code draws it and solves it.</h2><div class="step__b"><p class="lead">The picture is built from geometry, not painted by an image model. The code that draws the shape also works out the answer, so the key can't be wrong.</p><ul class="facts"><li>Vector geometry</li><li>Exact arithmetic</li><li>Seeded and repeatable</li></ul></div></div>
+      <div class="step" data-shape="s5" data-field="orange"><h2 class="jh">Then it tries to cheat.</h2><div class="step__b"><p class="lead">Can the question be answered without knowing the rule? Are two options the same? Each wrong option must be a mistake children really make. If not, the question is thrown away.</p><ul class="facts"><li>One right answer</li><li>No duplicate options</li><li>Not guessable</li></ul></div></div>
+      <div class="step" data-shape="s6" data-field="cyan"><h2 class="jh">A second reader checks it.</h2><div class="step__b"><p class="lead">An automated reviewer reads every lesson and looks at every picture. A new AI model only goes live when those scores say it is better.</p><ul class="facts"><li>Separate reviewer model</li><li>Sees the rendered picture</li><li>Gates model upgrades</li></ul></div></div>
+      <div class="step" data-shape="s7" data-field="yellow"><h2 class="jh">Marked before a child sees it.</h2><div class="step__b"><p class="lead">Only now does it reach the phone. Each child gets their own fresh set, and the answers stay on our server until the child has had a go.</p><ul class="facts"><li>Answers held on the server</li><li>Signed apps only</li><li>Next lesson prefetched</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="opener" id="agents" data-shape="teams" data-field="orange">
+  <h2 class="jh" data-rise>The AI writes. Code proves.</h2>
+  <div class="step__b" data-rise style="--d:1"><p class="lead">Two kinds of worker. Language models do what they are good at: explaining. Deterministic code does what must never be wrong: the answers.</p></div>
+</section>
+<section class="sec ink panel" data-shape="teams" style="--tone:var(--surface)" data-at="bg" data-field="bg">
+  <div class="wrap">
+    <div class="map" tabindex="0"><svg viewBox="0 0 1500 400" role="img" aria-label="How a lesson moves through Mizasi: a brief goes to AI writing agents and specialist agents, then to code engines and checks, which can send a draft back, then to a second read, and only then is it ready." font-family="'Bricolage Grotesque', Arial, sans-serif" font-weight="700" font-size="18" text-anchor="middle">
+      <g fill="none" stroke="#0a0a0a" stroke-opacity="0.22" stroke-width="4"><path d="M190,220 H220 V102 H950 V332 H1250 V102 H1420"/><path d="M1170,332 V217 H990 V102" stroke="#0a0a0a" stroke-opacity="0.7" stroke-dasharray="4 10" stroke-linecap="round"/></g>
+      <rect x="-8" y="-8" width="16" height="16" fill="#f53fd6"><animateMotion dur="9s" begin="0s" repeatCount="indefinite" path="M190,220 H220 V102 H950 V332 H1250 V102 H1420"/></rect><rect x="-8" y="-8" width="16" height="16" fill="#f53fd6"><animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M190,220 H220 V102 H950 V332 H1250 V102 H1420"/></rect><rect x="-8" y="-8" width="16" height="16" fill="#f53fd6"><animateMotion dur="9s" begin="-6s" repeatCount="indefinite" path="M190,220 H220 V102 H950 V332 H1250 V102 H1420"/></rect>
+      <rect x="-7" y="-7" width="14" height="14" fill="#f9a21f"><animateMotion dur="4s" repeatCount="indefinite" path="M1170,332 V217 H990 V102"/></rect>
+      <rect x="30" y="188" width="160" height="64" fill="#0a0a0a"/><text x="110.0" y="227" fill="#fff">Topic brief</text><rect x="330" y="70" width="220" height="64" fill="#ffc4ef"/><text x="440.0" y="109" fill="#0a0a0a">Writing agents</text><rect x="840" y="70" width="220" height="64" fill="#ffc4ef"/><text x="950.0" y="109" fill="#0a0a0a">Specialist agents</text>
+      <rect x="840" y="300" width="220" height="64" fill="#a4f6f8"/><text x="950.0" y="339" fill="#0a0a0a">Code engines</text><rect x="1130" y="300" width="160" height="64" fill="#ffd249"/><text x="1210.0" y="339" fill="#0a0a0a">Checks</text><rect x="1130" y="70" width="160" height="64" fill="#ffc4ef"/><text x="1210.0" y="109" fill="#0a0a0a">Second read</text><rect x="1360" y="70" width="120" height="64" fill="#f53fd6"/><text x="1420.0" y="109" fill="#0a0a0a">Ready</text>
+      <text x="1080" y="206" fill="#0a0a0a" font-size="16">Rejected: try again</text>
+      <g text-anchor="start" fill="#0a0a0a" font-size="16"><rect x="30" y="306" width="18" height="18" fill="#ffc4ef"/><text x="58" y="321">AI writes</text><rect x="30" y="336" width="18" height="18" fill="#a4f6f8"/><text x="58" y="351">Code proves</text><rect x="170" y="306" width="18" height="18" fill="#ffd249"/><text x="198" y="321">Gate</text></g>
+    </svg></div>
+    <ul class="stats"><li><b>4</b> subjects</li><li><b>1,449</b> topics</li><li><b>3</b> platforms, one codebase</li></ul>
+    <div class="roster">
+      <div data-rise><h3><i style="background:var(--pink)"></i>AI agents</h3><ul class="agents agents--ai">
+        <li class="agent"><b>Writers</b><p>Explain the idea and the worked method in plain words, at the child's level.</p></li>
+        <li class="agent"><b>Specialists</b><p>Set the questions, with a different specialist for each kind of question.</p></li>
+        <li class="agent"><b>Second reader</b><p>A separate model that reads every lesson and looks at every picture before release.</p></li>
+      </ul></div>
+      <div data-rise style="--d:1"><h3><i style="background:var(--cyan)"></i>Code engines</h3><ul class="agents agents--code">
+        <li class="agent"><b>Solvers</b><p>Work out every answer exactly. The AI is never the authority on what is right.</p></li>
+        <li class="agent"><b>Picture engines</b><p>Draw every figure, in 2D and 3D, from the same numbers the answer comes from.</p></li>
+        <li class="agent"><b>Checks</b><p>Throw out any question that is unclear, guessable or has more than one right answer.</p></li>
+        <li class="agent"><b>Marker</b><p>Marks each attempt on our server, never on the phone.</p></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ink" id="trace" style="--tone:var(--surface)">
+  <div class="wrap">
+    <div class="sec__head"><h2 class="head" data-rise>One lesson, start to finish.</h2><p class="lead" data-rise style="--d:1">Every run is recorded step by step. A draft that fails a check goes back to its specialist. Nothing skips the queue, and the next lesson is prepared before the child asks for it.</p></div>
+    <ol class="trace" data-rise><li><span>Topic brief</span><div class="lane"><i class="bar" style="--i:0;--a:0%;--b:8%;--c:#0a0a0a"></i></div></li><li><span>Writing agents</span><div class="lane"><i class="bar" style="--i:1;--a:8%;--b:46%;--c:#ffc4ef"></i></div></li><li><span>Specialist, first draft</span><div class="lane"><i class="bar" style="--i:2;--a:46%;--b:60%;--c:#ffc4ef"></i></div></li><li><span>Code engines</span><div class="lane"><i class="bar" style="--i:3;--a:60%;--b:65%;--c:#a4f6f8"></i></div></li><li><span>Checks: rejected</span><div class="lane"><i class="bar" style="--i:4;--a:65%;--b:68%;--c:#ffd249"></i></div></li><li><span>Specialist, second draft</span><div class="lane"><i class="bar" style="--i:5;--a:68%;--b:80%;--c:#ffc4ef"></i></div></li><li><span>Code engines</span><div class="lane"><i class="bar" style="--i:6;--a:80%;--b:85%;--c:#a4f6f8"></i></div></li><li><span>Checks: pass</span><div class="lane"><i class="bar" style="--i:7;--a:85%;--b:88%;--c:#ffd249"></i></div></li><li><span>Second read</span><div class="lane"><i class="bar" style="--i:8;--a:88%;--b:97%;--c:#f53fd6"></i></div></li><li><span>Ready. Next lesson queued</span><div class="lane"><i class="bar" style="--i:9;--a:97%;--b:100%;--c:#0a0a0a"></i></div></li></ol>
+    <p class="small note">An illustration of the idea, not our real pipeline or timings.</p>
+  </div>
+</section>
+
+<section class="sec ink typed" id="typed" style="--tone:var(--surface)">
+  <div class="wrap typed__in">
+    <div class="sec__head"><h2 class="head" data-rise>Typed objects, not loose text.</h2><p class="lead" data-rise style="--d:1">Agents never pass paragraphs to each other. Every hand-off is a structured object with a strict contract. If anything is missing or a check fails, nothing is shown.</p>
+      <ul class="facts" data-rise style="--d:2"><li>Strict contracts</li><li>Checks that fail safe</li><li>Repeatable generation</li><li>Every run recorded</li></ul></div>
+    <pre data-rise style="--d:1" tabindex="0"><code>{
+  <b>"kind"</b>: "exercise",
+  <b>"format"</b>: "rotation",
+  <b>"stem"</b>: { "figure": "shape#a41f" },
+  <b>"options"</b>: ["A", "B", "C", "D"],
+  <b>"answer"</b>: { "value": "B", "computed_by": "code" },
+  <b>"checks"</b>: {
+    "schema": <i>"pass"</i>,
+    "single_answer": <i>"pass"</i>,
+    "not_guessable": <i>"pass"</i>,
+    "second_read": <i>"pass"</i>
+  }
+}</code>
+<span class="small">Made up for illustration. Not our real format.</span></pre>
+  </div>
+</section>
+
+<section class="opener" id="try" data-shape="glyph" data-field="pink">
+  <h2 class="jh" data-rise>Don't take our word for it.</h2>
+  <div class="step__b" data-rise style="--d:1"><p class="lead">Two live demos follow. Both run in your browser, right now, with code that already knows the answer.</p></div>
+</section>
+<section class="deal ink panel" id="deal" data-shape="glyph" data-at="bg" data-field="pink">
+  <div class="wrap deal__in">
+    <div class="plate" data-ui data-rise>
+      <p class="plate__q" id="q-prompt">This question is made by script in your browser.</p>
+      <div class="plate__stem" id="q-stem"></div>
+      <div class="opts" id="q-opts"></div>
+    </div>
+    <div class="deal__side">
+      <div class="tabs" role="tablist" aria-label="Question type" data-rise>
+        <button role="tab" aria-selected="true" data-kind="rotation">Rotation</button>
+        <button role="tab" aria-selected="false" data-kind="reflection">Reflection</button>
+        <button role="tab" aria-selected="false" data-kind="sequence">Number sequence</button>
+      </div>
+      <div class="deal__mid">
+        <h2 class="head" data-rise style="--d:1">Deal a fresh question.</h2>
+        <p data-rise style="--d:2">This one was made in your browser a moment ago, in the same way we work at scale. Code builds the question, code knows the answer, and every wrong option is a real mistake. Pick an answer.</p>
+        <p id="result" aria-live="polite" data-rise style="--d:3"></p>
+      </div>
+      <div class="cells" data-rise style="--d:4">
+        <button id="again">Deal another</button>
+        <button id="why">Show the working</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ink" id="solid">
+  <div class="wrap solid__in">
+    <div class="plate plate--solid" data-rise><canvas id="solid-cv" width="640" height="640" role="img" aria-label="A block solid turning slowly, drawn by code"></canvas></div>
+    <div class="solid__side">
+      <div class="sec__head"><h2 class="head" data-rise>A solid, turned and viewed by code.</h2><p class="lead" data-rise style="--d:1">This block solid was built in your browser. The same model that draws it works out what it looks like from the top, the front and the side, which is how a 3D question gets a key that cannot be wrong.</p></div>
+      <div class="views" data-rise style="--d:2"><figure><div class="view" id="v-top"></div><figcaption>Top</figcaption></figure><figure><div class="view" id="v-front"></div><figcaption>Front</figcaption></figure><figure><div class="view" id="v-side"></div><figcaption>Side</figcaption></figure></div>
+      <div class="cells" data-rise style="--d:3"><button id="solid-new">Build another solid</button><button id="solid-spin">Pause the turn</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="jr seq" id="inside" aria-label="What is inside">
+  <div class="jr__in">
+    <div class="jr__steps">
+      <div class="step" data-shape="bars" data-field="cyan"><h2 class="jh">Pictures built from numbers</h2><div class="step__b"><p class="lead">Fractions, shapes and reasoning figures are drawn from the same numbers the answer comes from. They are exact, sharp at any size, and the same on a phone, a laptop or paper.</p><ul class="facts"><li>Exact</li><li>Sharp at any size</li><li>Same on every screen</li></ul></div></div>
+      <div class="step" data-shape="vault" data-field="yellow"><h2 class="jh">Answers stay with us</h2><div class="step__b"><p class="lead">The phone gets the question, never the key. Marking happens on our server, with the same code that made the question. Only our own signed apps can reach it.</p><ul class="facts"><li>Marked on the server</li><li>Our apps only</li></ul></div></div>
+      <div class="step" data-shape="gate" data-field="pink"><h2 class="jh">Any model, same checks</h2><div class="step__b"><p class="lead">Mizasi doesn't train its own AI model, and children's work is never used to train one. Quality comes from the brief, the code and the second read, so a better model can be put to work as soon as it passes.</p><ul class="facts"><li>No training on children</li><li>Upgrade when it passes</li></ul></div></div>
+      <div class="step" data-shape="grow" style="--tone:var(--surface)" data-field="bg"><h2 class="jh">It grows by the topic</h2><div class="step__b"><p class="lead">A new topic or a whole new subject is added to the map, and lessons for it are generated the same way. Nothing is retrained. Today that is four subjects and 1,449 topics.</p><ul class="facts"><li>4 subjects</li><li>1,449 topics</li><li>Nothing retrained</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec specs ink panel" id="specs" style="--tone:var(--surface)" data-shape="wall" data-at="bg" data-field="bg">
+  <div class="wrap">
+    <div class="sec__head"><h2 class="head" data-rise>Runs like infrastructure.</h2></div>
+    <dl class="spec" data-rise>
+      <div><dt>Asynchronous by design</dt><dd>Lessons are queued and built by a private worker. The app never waits on a live model call.</dd></div>
+      <div><dt>Always one ahead</dt><dd>The next lesson is generated in the background while the child works on this one.</dd></div>
+      <div><dt>Keeps going under load</dt><dd>If an AI model is busy, the lesson is retried or handed to a backup.</dd></div>
+      <div><dt>Evaluation-gated upgrades</dt><dd>A new model goes live only after a full evaluation run scores it against the current one.</dd></div>
+      <div><dt>Fair-use limits</dt><dd>Limits for each child keep cost and load predictable.</dd></div>
+      <div><dt>Our apps only</dt><dd>The service only answers our own signed iOS, Android and web apps.</dd></div>
+      <div><dt>Locked-down connections</dt><dd>Connections and signing keys are locked down end to end.</dd></div>
+      <div><dt>Tested like a product</dt><dd>A large automated test suite, plus load tests of many children learning at once.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="proof" id="proof" data-shape="ring" data-at="back" data-field="cyan">
+  <div class="card" data-rise>
+    <h2>Proven in code</h2>
+    <p class="names">Rotations&nbsp;· Reflections&nbsp;· Cube&nbsp;nets<br>Dice&nbsp;· Block&nbsp;views&nbsp;· Turned&nbsp;solids<br>Alphabet&nbsp;codes&nbsp;· Word&nbsp;patterns<br>Fractions&nbsp;· Decimals&nbsp;· Rounding<br>Answer&nbsp;keys&nbsp;· Wrong&nbsp;options<br>Answer&nbsp;positions</p>
+    <p>The AI never has the last word on any of these.</p>
+  </div>
+</section>
+
+<section class="opener close" id="contact" data-shape="cube" data-at="left" data-field="yellow">
+  <div class="reply" data-rise>
+    <h2 class="head">See it running</h2>
+    <p>One app for iPhone, Android and the web. Four subjects. Every answer checked before it is shown. Ask for a walkthrough of the engine, or try a lesson yourself.</p>
+    <a class="button" href="mailto:hello@mizasi.com?subject=Mizasi%20technology%20walkthrough">Email hello@mizasi.com</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="post">
+    <div>
+      <h2>Marked with care.</h2>
+      <p>This page shows what Mizasi does. How it does it stays with us.</p>
+    </div>
+    <div class="post__addr">
+      <img src="assets/mizasi-logo.svg" alt="" width="72" height="72">
+      <a href="mailto:hello@mizasi.com">hello@mizasi.com</a>
+      <a href="https://mizasi.com">mizasi.com</a>
+      <a href="https://mizasi.com/try">Try a lesson</a>
+    </div>
+    <p class="post__imprint small">© 2026 Mizasi. English, Mathematics, Verbal Reasoning and Non-Verbal Reasoning for the 11+.</p>
+  </div>
+</footer>
+
+<script type="importmap">{"imports":{"three":"./assets/three.module.min.js"}}</script>
+<script src="site.js"></script>
+<script type="module" src="scene.js"></script>
+</body>
+</html>
